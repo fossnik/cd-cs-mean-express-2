@@ -4,22 +4,10 @@ var app = express();
 // use that public folder (static middleware)
 app.use(express.static('public'));
 
-// redirect from root to /cities
-app.get('/', function (request, response) {
-	response.redirect(301, '/cities');
-});
-
 // route for /cities - do AJAX for html injection
-app.get('/cities', function (request, response) {
+app.get('/cities', function(request, response){
 	var someCities = ["Providence", "Austin", "Melbourne", "Detroit"];
-
-	var list = [];
-	someCities.forEach(function(city){
-		// html += "INPUT value=" + city;
-		console.log(city);
-	})
-
-	// $(".form").append(html);
+	response.json(someCities);
 });
 
 // serving up fresh HTML on port 8000
