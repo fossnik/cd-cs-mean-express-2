@@ -1,10 +1,9 @@
 $(function(){
 	$.get( '/cities', function(someCities) {
-		var list = [];
+		var html = "";
 		someCities.forEach(function(city){
-			list.push(city);
+			html += "<option>" + city;
 		})
-		$('.cities').html(list);
-		console.log(list);
+		$('.cities').html(html);
 	});
 });
