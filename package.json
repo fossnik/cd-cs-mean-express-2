@@ -1,7 +1,7 @@
 {
-  "name": "codeschool",
+  "name": "cd-cs-mean-express-2",
   "version": "1.0.0",
-  "description": "",
+  "description": "mean-2",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,5 +10,18 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.15.4"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fossnik/cd-cs-mean-express-2.git"
+  },
+  "keywords": [
+    "MEAN",
+    "express"
+  ],
+  "bugs": {
+    "url": "https://github.com/fossnik/cd-cs-mean-express-2/issues"
+  },
+  "homepage": "https://github.com/fossnik/cd-cs-mean-express-2#readme"
 }
